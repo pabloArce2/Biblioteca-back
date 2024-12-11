@@ -1,0 +1,84 @@
+# Python compiled files
+*.py[cod]
+__pycache__/
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Virtual environment directories
+env/
+venv/
+ENV/
+.venv/
+
+# Logs and temporary files
+*.log
+*.pot
+*.pid
+*.gz
+*.out
+*.toc
+*.orig
+*.pyc
+
+# System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Environment variables and secrets
+.env
+.env.*
+.secret
+
+# Database files
+*.sqlite3
+*.db
+*.sql
+*.sql.bak
+
+# Pytest and test-related files
+.pytest_cache/
+.tox/
+.coverage
+.cache/
+nosetests.xml
+coverage.xml
+*.cover
+*.py,cover
+.hypothesis/
+
+# Editor-specific files
+.vscode/
+.idea/
+*.swp
+*.swo
+*.bak
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# FastAPI specific
+*.pid
+uvicorn.log
+*.pid.lock
+*.sock
+
+# Static and media files (if generated dynamically)
+staticfiles/
+mediafiles/
+
+# Package management
+Pipfile
+Pipfile.lock
+poetry.lock
+
+# Wheel files
+*.whl
+
+# Other temporary files
+*.tmp
+*.temp
+*.~lock.*
