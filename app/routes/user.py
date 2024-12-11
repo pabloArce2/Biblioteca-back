@@ -16,9 +16,6 @@ def register(user: UserCreate, db: Session = Depends(get_db)):
     if get_user_by_username(db, user.username):
         raise HTTPException(status_code=400, detail="Username already registered")
     
-    # Crear el usuario
-    hashed_password = bcrypt.hashpw(user.password.encode('utf-8'), bcrypt.gensalt()).decode('utf-8')
-    user.password = hashed_password
     db_user = create_user(db, user)
 
     # Generar token
